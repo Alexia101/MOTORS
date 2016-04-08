@@ -1,1 +1,39 @@
-<xml xmlns="http://www.w3.org/1999/xhtml"></xml>
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <block type="controls_repeat" id="154" inline="true" x="76" y="53">
+    <value name="TIMES">
+      <block type="math_number" id="156">
+        <field name="NUM">3</field>
+      </block>
+    </value>
+    <statement name="DO">
+      <block type="movement_setmotors" id="116" inline="true">
+        <value name="BOTHMOVLEFT">
+          <block type="math_number" id="133">
+            <field name="NUM">20</field>
+          </block>
+        </value>
+        <value name="BOTHMOVRIGHT">
+          <block type="math_number" id="134">
+            <field name="NUM">10</field>
+          </block>
+        </value>
+        <next>
+          <block type="movement_forward" id="155">
+            <next>
+              <block type="robot_delay" id="146" inline="true">
+                <value name="DELAY">
+                  <block type="math_number" id="147">
+                    <field name="NUM">2500</field>
+                  </block>
+                </value>
+                <next>
+                  <block type="movement_stop" id="167"></block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+</xml>
